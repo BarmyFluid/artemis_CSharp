@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP;NETCOREAPP2_1;CLIENTPROFILE;DEBUG;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>TRACE;RELEASE;CLIENTPROFILE;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Aspect.cs">
+      <Link>Aspect.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisComponentCreate.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisComponentPool.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisEntitySystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\ArtemisEntityTemplate.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Attributes\AttributesProcessor.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\BlackBoard.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\SimpleTrigger.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\Trigger.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\TriggerMultiCondition.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Blackboard\TriggerStateType.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentMapper.cs">
+      <Link>ComponentMapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentPool.cs">
+      <Link>ComponentPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentPoolable.cs">
+      <Link>ComponentPoolable.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentPoolMultiThread.cs">
+      <Link>ComponentPoolMultiThread.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\ComponentType.cs">
+      <Link>ComponentType.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Entity.cs">
+      <Link>Entity.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\EntityWorld.cs">
+      <Link>EntityWorld.cs</Link>
+    </Compile>
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Exceptions\MissingEntityTemplateException.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Interface\IComponent.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Interface\IComponentPool.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Interface\IEntityTemplate.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\AddedComponentHandler.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\AddedEntityHandler.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\ComponentTypeManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\EntityManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\ExecutionType.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\GameLoopType.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\GroupManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\QueueManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\RemovedComponentHandler.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\RemovedEntityHandler.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\SystemBitManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\SystemManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Manager\TagManager.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\DelayedEntityProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\DelayedEntitySystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntityComponentProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntityProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\EntitySystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\IntervalEntityProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\IntervalEntitySystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\IntervalTagSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\ParallelEntityProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\ProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\QueueProcessingSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\QueueSystemProcessingThreadSafe.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\System\TagSystem.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Bag.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\BagEnumerator.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\FastDateTime.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\MetroCompatibilityExtensions.cs" />
+    <Compile Include="..\Artemis_XNA_INDEPENDENT\Utils\Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Artemis_XNA_INDEPENDENT\LICENSE.txt">
+      <Link>LICENSE.txt</Link>
+    </Content>
+    <Content Include="..\Artemis_XNA_INDEPENDENT\README">
+      <Link>README</Link>
+    </Content>
+  </ItemGroup>
+</Project>
